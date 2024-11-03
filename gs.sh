@@ -19,6 +19,9 @@ elif [ $choic = "N" ] || [ $choic = "No" ] || [ $choic = "NO" ] || [ $choic = "n
 then
 	echo " *** You selected $choic. Thanks Bye"
 	exit	
-else       	
-	echo " *** $choic is wrong option Please try again."
+elif [ $choic = " " ]
+then
+	echo " *** Nothing is selected BYE."
+else
+	echo " *** $choic is wrong option. Please try again."
 fi
