@@ -10,7 +10,7 @@ then
 	var1=`git branch --all|grep 'remotes/origin/*'|grep -v 'remotes/origin/HEAD'|grep -v 'remotes/origin/MASTER'`
 	select i in $var1
 	do
-	  var2=${i:15:10}
+	  var2=${i:15:}
   	  echo " Branch selected is :  $var2"	  
 	  git checkout --f $var2
 	  exit
