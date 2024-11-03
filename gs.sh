@@ -14,11 +14,15 @@ then
 #	v2=awk -F "/" '{print $3}' $var1
 	select i in $var1
 	do
-	  git checkout $i
+	  var2=${i:15:10}	
+	  git checkout --f $var2
 	  exit
   	done  
-else
-       	
+elif [ choic="N"]
+then
+	echo "You selected N. Thanks Bye"
+	exit	
+else       	
 	echo "choice is wrong."
 fi
 
