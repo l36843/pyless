@@ -15,7 +15,7 @@ then
 	  git checkout --f $var2
 	  exit
   	done  
-elif [ $choic = "N" ] || [ $choic = "No" ] || [ $choic = "NO" ] || [ $choic = "no" ] || [ $choic = n" ]
+elif [ $choic = "N" ] || [ $choic = "No" ] || [ $choic = "NO" ] || [ $choic = "no" ] || [ $choic = "n" ]
 then
 	echo " *** You selected $choic. Thanks Bye"
 	exit	
