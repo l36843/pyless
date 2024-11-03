@@ -9,9 +9,7 @@ read choic
 if [ $choic="Y" ] 
 then	
 	echo "Below are current active branches in Git."
-#	var1=`git branch`
 	var1=`git branch --all|grep 'remotes/origin/*'|grep -v 'remotes/origin/HEAD'|grep -v 'remotes/origin/MASTER'`
-#	v2=awk -F "/" '{print $3}' $var1
 	select i in $var1
 	do
 	  var2=${i:15:10}	
@@ -25,13 +23,3 @@ then
 else       	
 	echo "choice is wrong."
 fi
-
-#!/bin/bash
-# echo "Enter password"
-#read pass
-#if [ $pass="Y" ]
-#then
-#	  echo "The password is correct."
-#  else
-#	    echo "The password is incorrect, try again."
-#fi
