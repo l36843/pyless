@@ -6,6 +6,7 @@ echo "Do you want to switch git branch. Enter [Y/N)]: "
 read choic
 #echo "user input is :" $choic
 #if [$choic="Y"] $choic = "y" ] || [ $choic = "Yes" ] || [ $choic = "yes" ] ; 
+echo " Choice selected is : " $choic
 if [ $choic="Y" ] 
 then	
 	echo "Below are current active branches in Git."
