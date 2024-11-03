@@ -7,7 +7,7 @@ read choic
 #echo "user input is :" $choic
 #if [$choic="Y"] $choic = "y" ] || [ $choic = "Yes" ] || [ $choic = "yes" ] ; 
 echo " Choice selected is : " $choic
-if [ $choic="Y" ] 
+if [ $choic = "Y" ] 
 then	
 	echo "Below are current active branches in Git."
 	var1=`git branch --all|grep 'remotes/origin/*'|grep -v 'remotes/origin/HEAD'|grep -v 'remotes/origin/MASTER'`
@@ -18,7 +18,7 @@ then
 	  git checkout --f $var2
 	  exit
   	done  
-elif [ choic="N"]
+elif [ $choic = "N" ]
 then
 	echo "You selected N. Thanks Bye"
 	exit	
